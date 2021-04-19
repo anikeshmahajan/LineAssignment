@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	int hr=8;
 	int i=0;
 	
-	while(i<20 && hr!=100)
+	while(i<20 && hr<100)
 	{
     if(  Math.floor(Math.random() *10) %2 == 1.0 )
       {
