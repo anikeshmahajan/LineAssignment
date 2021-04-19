@@ -38,7 +38,7 @@ public class LineLengthCpmareTo {
 		
 		 
 		int res=length1.compareTo(length2);
-		if(res == -1)
+		if(res < 0)
 		{
 			System.out.println("Length of First line is less ");
 		}
