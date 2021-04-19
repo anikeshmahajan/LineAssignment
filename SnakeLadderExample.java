@@ -6,11 +6,12 @@ public class SnakeLadderExample {
 	
 	public static void main(String[] args) {
 		 int newPosition =0;
-	
+		 int count=0;
 		while(true)
 		{
 			
 		int dice=getDiceNmbr();
+		
 		if(dice == 6)
 			{
 				while(newPosition !=WIN)
@@ -19,11 +20,12 @@ public class SnakeLadderExample {
 					
 			  int dice2 = getDiceNmbr();
 				int opt=options();
+				
 				switch (opt) {
 				case 1: {
-					if(newPosition>100)
+					if(newPosition>99)
 					{
-						  
+						 
 					}else
 					{
 					newPosition= dice2+newPosition;
@@ -48,9 +50,13 @@ public class SnakeLadderExample {
 				}
 				
 				}
-				
-				System.out.println(newPosition);
-			
+				if(newPosition>100)
+				{
+					
+				}else
+				{
+				System.out.println("Position of the player is :" +newPosition + "\n" + "Number of dice thrown  is: " +count++ );
+				}
 				}
 				
 			
